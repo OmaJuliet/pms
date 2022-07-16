@@ -25,10 +25,13 @@ def create_app(test_config=None):
     CORS(app)
 
 
-    @app.route('/')
+    @app.route('/register', methods=['POST'])
     def index():
         pass
 
+    @app.route('/login', methods=['POST'])
+    def login():
+        pass
     # Launch.
 
     # Default port:
